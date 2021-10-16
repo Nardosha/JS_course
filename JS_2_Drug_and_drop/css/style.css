@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  padding-top: 5rem;
+  margin: 0;
+  justify-content: center;
+  overflow: hidden;
+}
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+}
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+.placeholder {
+  width: 150px;
+  height: 100px;
+
+  background: #fff;
+  -webkit-transition: -webkit-transform 1000ms;
+  will-change: background;
+}
+.item {
+  width: 150px;
+  height: 66px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  padding: 0.8rem 1rem;
+  text-align: center;
+  cursor: grab;
+  color: #828282;
+  background: #f7f6f7;
+  transition: all 1s ease 0s;
+}
+.item:hover {
+  color: #eee;
+  background: linear-gradient(
+    to bottom,
+    rgba(123, 189, 224, 1) 0%,
+    rgba(255, 124, 216, 1) 99%
+  );
+}
+.item:active {
+  cursor: grabbing;
+}
+.hold {
+  color: #eee;
+  background: linear-gradient(
+    to bottom,
+    rgba(123, 189, 224, 1) 0%,
+    rgba(255, 124, 216, 1) 99%
+  );
+}
+.hide {
+  display: none;
+}
+
+.hovered {
+  -webkit-transition-property: background;
+  background: rgb(184, 38, 38);
+  transform: rgb(184, 38, 38);
+  /* background: linear-gradient(
+    to bottom,
+    rgba(73, 165, 191, 1) 0%,
+    rgba(117, 189, 209, 0.4) 59%,
+    rgba(146, 205, 221, 0) 98%,
+    rgba(147, 206, 222, 0) 100%
+  );
+  transform: linear-gradient(
+    to bottom,
+    rgba(73, 165, 191, 1) 0%,
+    rgba(117, 189, 209, 0.4) 59%,
+    rgba(146, 205, 221, 0) 98%,
+    rgba(147, 206, 222, 0) 100%
+  ); */
+}
